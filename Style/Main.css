@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6; 
+    display: flex;
+    flex-direction: column; /* Cambiado para que los elementos se apilen verticalmente en dispositivos móviles */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    padding: 20px; /* Añadido para dar un poco de espacio alrededor en dispositivos móviles */
+}
+
+.container {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    width: 100%; /* Asegura que el contenedor se ajuste al ancho de la pantalla */
+    max-width: 600px; /* Limita el ancho máximo para evitar que el contenedor sea demasiado ancho en pantallas grandes */
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%; /* Cambiado para que el input se ajuste al ancho del contenedor */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #68217A; 
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 100%; /* Cambiado para que el botón se ajuste al ancho del contenedor */
+}
+
+button:hover {
+    background-color: #50155c;
+}
+
+#mensaje {
+    font-size: 18px;
+    font-weight: bold;
+    color: #68217A; 
+}
+
+#datos {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce el padding en dispositivos móviles */
+    }
+
+    .container {
+        max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+    }
+
+    label {
+        width: auto; /* Permite que el label se ajuste al contenido */
+    }
+
+    input[type="text"], button {
+        width: 100%; /* Asegura que el input y el botón se ajusten al ancho del contenedor */
+    }
+}
+
+
+/* Estilos básicos para el contenedor principal */
+/* #contenedorPrincipal {
+    width: 100%;
+    max-width: 600px; /* Ajusta según sea necesario */
+    /* margin: 0 auto;
+    padding: 20px; */
+
+
+/* Estilos para el formulario principal */
+/* .formulario {
+    display: block; /* Asegura que el formulario esté visible por defecto */
+    /* margin-bottom: 20px; */
+
+
+/* Estilos para la sección de montos ingresados */
+/* .montos {
+    display: none; /* Oculta la sección por defecto */
+
+
+/* Estilos para los mensajes */
+/* #mensaje p {
+    color: #333;
+    margin-bottom: 10px;
+} */
+
+/* Estilos para la lista de montos ingresados */
+/* #listaMonto {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaMonto li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+} */
+
