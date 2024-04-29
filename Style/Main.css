@@ -45,9 +45,16 @@ button {
     color: #fff;
     font-size: 14px;
     cursor: pointer;
-    margin-right: 10px;
-    width: 100%; /* Cambiado para que el botón se ajuste al ancho del contenedor */
+    margin-right: 10px; /* Añade un margen a la derecha para separar los botones */
+    margin-bottom: 10px; /* Añade un margen en la parte inferior para separar los botones en el caso de que estén en una fila */
+    width: 100%; /* Asegura que el botón se ajuste al ancho del contenedor */
 }
+
+/* Si los botones están en una fila y quieres que no se vean pegados, puedes ajustar el margen derecho solo para el último botón */
+button:last-child {
+    margin-right: 0; /* Elimina el margen a la derecha del último botón */
+}
+
 
 button:hover {
     background-color: #50155c;
@@ -82,41 +89,3 @@ button:hover {
         width: 100%; /* Asegura que el input y el botón se ajusten al ancho del contenedor */
     }
 }
-
-
-/* Estilos básicos para el contenedor principal */
-/* #contenedorPrincipal {
-    width: 100%;
-    max-width: 600px; /* Ajusta según sea necesario */
-    /* margin: 0 auto;
-    padding: 20px; */
-
-
-/* Estilos para el formulario principal */
-/* .formulario {
-    display: block; /* Asegura que el formulario esté visible por defecto */
-    /* margin-bottom: 20px; */
-
-
-/* Estilos para la sección de montos ingresados */
-/* .montos {
-    display: none; /* Oculta la sección por defecto */
-
-
-/* Estilos para los mensajes */
-/* #mensaje p {
-    color: #333;
-    margin-bottom: 10px;
-} */
-
-/* Estilos para la lista de montos ingresados */
-/* #listaMonto {
-    list-style-type: none;
-    padding: 0;
-}
-
-#listaMonto li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ccc;
-} */
-
